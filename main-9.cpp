@@ -21,20 +21,20 @@ int main() {
     std::cout << std::endl;
 
     // Displays the list
-    myList.displayList();  // Output: List: 5 10 20
+    myList.displayList();  // Output: List: 15 5 25
 
     // Removes elements from the front and back
     myList.pop_front();
     myList.pop_back();
 
     // Displays the modified list
-    myList.displayList();  // Output: List: 10
+    myList.displayList();  // Output: List: 5
 
     // Inserts an element at a specific position
     myList.insert(1, 15);
 
     // Displays the list after insertion
-    myList.displayList();  // Output: List: 10 15
+    myList.displayList();  // Output: List: 5 15
 
     // Removes an element from a specific position
     myList.remove(0);
@@ -59,14 +59,16 @@ int main() {
     Nonprofessional nonProf("Bob Davis", 35, 18.5, 80);
 
     // Displays information for the Professional employee
-    std::cout << "The Professional Employee Weekly Salary would be: " << prof.calculateWeeklySalary() << std::endl;
-    std::cout << "The Health Care Contributions would be: " << prof.computeHealthCareContributions() << std::endl;
-    std::cout << "The given Vacation Days are: " << prof.computeVacationDays() << std::endl;
+    std::cout << "Professional Employee: " << std::endl;
+    std::cout << "Weekly Salary: $" << prof.calculateWeeklySalary() << std::endl;
+    std::cout << "Health Care Contributions: $" << prof.computeHealthCareContributions() << std::endl;
+    std::cout << "Vacation Days: " << prof.computeVacationDays() << " days" << std::endl;
 
     // Displays information for the Nonprofessional employee
-    std::cout << "\nThe Nonprofessional Employee Weekly Salary would be: " << nonProf.calculateWeeklySalary() << std::endl;
-    std::cout << "The Health Care Contributions is: " << nonProf.computeHealthCareContributions() << std::endl;
-    std::cout << "The given Vacation Days are: " << nonProf.computeVacationDays() << std::endl;
+    std::cout << "\nNonprofessional Employee: " << std::endl;
+    std::cout << "Weekly Salary: $" << nonProf.calculateWeeklySalary() << std::endl;
+    std::cout << "Health Care Contributions: $" << nonProf.computeHealthCareContributions() << std::endl;
+    std::cout << "Vacation Hours: " << nonProf.computeVacationDays() << " hours" << std::endl;
 
     return 0;
 }
