@@ -150,7 +150,7 @@ bool SingleLinkedList<T>::remove(size_t index) {
     return true;
 }
 
-// Find the index of the first occurrence of an item in the list
+// Find the position of the first occurrence of an item in the list
 template <typename T>
 size_t SingleLinkedList<T>::find(const T& item) const {
     Node* current = head;
@@ -179,3 +179,4 @@ void SingleLinkedList<T>::displayList() const {
 
 // Explicit instantiation for the int type
 template class SingleLinkedList<int>;
+
